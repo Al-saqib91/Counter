@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+    <title>counter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h2>Counter</h2>
+                <p id="number">0</p>
+                <button onclick="minus()" id="minus"><b>-</b></button>
+                <button onclick="reset()" id="reset">Reset</button>
+                <button onclick="plus()" id="add"><b>+</b></button>
+        </div>
+    </div>
+
+    <script>
+        let counter = 0;
+        function plus(){
+            document.getElementById("number").innerHTML = ++counter;
+        }
+        function minus(){
+            document.getElementById("number").innerHTML = --counter;
+        }
+        function reset(){
+            counter=0;
+            document.getElementById("number").innerHTML = counter;
+}
+    </script>
+
+</body>
+</html>
